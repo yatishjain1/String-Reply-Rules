@@ -13,6 +13,11 @@ public class ReplyController {
 	
 	@Autowired
     private ReplyMsgService service;
+	
+	@GetMapping("/")
+	public String hello() {
+		return ("Hello world");
+	}
 
 	@GetMapping("/reply")
 	public ReplyMessage replying() {
