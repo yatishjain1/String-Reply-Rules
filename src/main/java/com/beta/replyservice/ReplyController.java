@@ -14,6 +14,7 @@ public class ReplyController {
 	@Autowired
     private ReplyMsgService service;
 	
+	//sample method to test default url
 	@GetMapping("/")
 	public String hello() {
 		return ("Hello world");
